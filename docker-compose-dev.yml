@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  bots34:
+    build:
+      args:
+        - BOTS_ENV=dev
+    ports:
+      - "5522:22"
+    volumes:
+      - bots-sync:/bots:nocopy
+
+volumes:
+  bots-sync:
+    external: true
