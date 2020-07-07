@@ -1,0 +1,4 @@
+20200706 18:04:34 STARTINFO: Bots webserver started.
+20200706 18:04:34 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
+20200706 18:04:34 STARTINFO: Bots webserver serving at port: "8080".
+20200706 18:04:34 STARTINFO: Bots webserver uses plain http (no ssl).
