@@ -19,4 +19,3 @@ services:
       dockerfile: ./compose/bots_py27/Dockerfile
     ports:
       - "0.0.0.0:8081:8080"
-
