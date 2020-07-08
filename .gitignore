@@ -108,5 +108,5 @@ coverage.xml
 venv/
 ENV/
 /Gemfile.lock
-/user_config/botssys/data/*
-/user_config/botssys/logging/*
+user_config/botssys/data/*
+user_config/botssys/logging/*
