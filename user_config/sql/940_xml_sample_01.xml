@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Document>
+    <sender>TFi</sender>
+    <receiver>3102332500</receiver>
+    <testindicator>T</testindicator>
+    <CardCode>C1000</CardCode>
+    <DocNum>1000</DocNum>
+    <DocDate>20200601</DocDate>
+    <DocDueDate>20200605</DocDueDate>
+    <CancelDate>20200610</CancelDate>
+    <NumAtCard>PO1234</NumAtCard>
+    <ShipToCode>DC 01</ShipToCode>
+    <AbsEntry>100</AbsEntry>
+    <StreetS>123 Main St</StreetS>
+    <CityS>Los Angeles</CityS>
+    <StateS>CA</StateS>
+    <ZipCodeS>9000</ZipCodeS>
+    <CountryS>US</CountryS>
+    <NTE01>GFT</NTE01>
+    <NTE02>Happy Birthday</NTE02>
+    <SCAC>UPS</SCAC>
+    <U_SES_SLI_DN>586</U_SES_SLI_DN>
+    <Lines>
+        <Line>
+            <ItemCode>P1001</ItemCode>
+            <ItemName>Aura Black/Steel 6</ItemName>
+            <Quantity>10</Quantity>
+            <UOM>EA</UOM>
+            <CodeBars>888362301788</CodeBars>
+            <U_ALL_CUSTOM_BP_NO>5050</U_ALL_CUSTOM_BP_NO>
+        </Line>
+    </Lines>
+</Document>
