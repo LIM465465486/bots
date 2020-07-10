@@ -54,6 +54,8 @@ recorddefs = {
             ['NTE01', 'C', 3, 'AN'],
             ['NTE02', 'C', 80, 'AN'],
             ['SCAC', 'C', 4, 'AN'],
+            ['U_ALL_REF_IT', 'C', 80, 'AN'],
+            ['U_SES_EDI_CODE', 'C', 35, 'AN'],
         ],
     'Lines':[
             ['BOTSID','M',255,'A'],
@@ -67,6 +69,8 @@ recorddefs = {
             ['RelQtty', 'C', 35, 'AN'],
             ['CodeBars', 'M', 35, 'AN'],
             ['U_ALL_CUSTOM_BP_NO', 'C', 35, 'AN'],
+            ['U_ALL_PackTypeCode', 'C', 35, 'AN'],
+            ['U_SES_SLI_POP', 'C', 35, 'AN'],
         ],
      }
  
