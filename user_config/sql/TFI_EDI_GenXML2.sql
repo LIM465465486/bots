@@ -3,16 +3,15 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[TFI_EDI_GenXML]
+ALTER PROCEDURE [dbo].[TFI_EDI_GenXML2]
 --DEBUG
 /*
-EXEC [TFI_EDI_GenXML];
+EXEC [TFI_EDI_GenXML2];
 SELECT TOP 1000 *
 FROM dbo.[TFI_EDI_GenXML_Log]
 ORDER BY [ID] DESC;
 */
-
---EXEC [SQL01a].[BN_Taos_Sandbox2].[dbo].[TFI_EDI_WHSSHPORDER2XML] 465076;
+--EXEC [TFI_EDI_WHSSTKTRANS2XML] 19145;
 
 AS
 BEGIN
@@ -51,8 +50,8 @@ DECLARE	@sGUID VARCHAR(254);
 			END;
 
 	--temp dir for attachment gen
-	SET @filePath = 'D:\TFi\CG\940_xml\';
-	SET @filePathArchive = 'D:\TFi\CG\archive\940_xml\';
+	SET @filePath = 'D:\TFi\CG\943_xml\';
+	SET @filePathArchive = 'D:\TFi\CG\archive\943_xml\';
 	--print 'A';
 
 
@@ -67,10 +66,14 @@ DECLARE	@sGUID VARCHAR(254);
 	INSERT INTO #DocList
 		([DocKey])
 	SELECT
-		ph.[AbsEntry]
-		FROM [SQL01a].[BN_Taos_Sandbox2].[dbo].OPKL ph (NOLOCK)
-        WHERE ph.Status = 'R' and CreateDate >= '2020-7-5'
-		ORDER BY ph.[AbsEntry];
+		DocEntry
+		from
+		[SQL01a].[BN_Taos].[dbo].odrf h (nolock)
+		where
+			h.objtype = '20'
+			and
+			h.DocStatus = 'O'
+		ORDER BY h.DocEntry;
 	SET @i0 = @@ROWCOUNT;
 	SET @i1 = 1;
 
@@ -85,7 +88,7 @@ DECLARE	@sGUID VARCHAR(254);
 	WHILE @i1 <= @i0
 	BEGIN
 	--set query to create the report
-	SET @query = 'EXEC [SQL01a].[BN_Taos_Sandbox2].[dbo].[TFI_EDI_WHSSHPORDER2XML] ' + CAST((SELECT [DocKey] FROM #DocList WHERE [ID] = @i1) AS NVARCHAR);
+	SET @query = 'EXEC [SQL01a].[BN_Taos].[dbo].[TFI_EDI_WHSSTKTRANS2XML] ' + CAST((SELECT [DocKey] FROM #DocList WHERE [ID] = @i1) AS NVARCHAR);
 	--select @query;
 	-- generate the dynamic file name based on the date and time
 	SET @Now =  replace(convert(varchar(8), GETDATE(), 112)+convert(varchar(8), GETDATE(), 114), ':','');
@@ -95,7 +98,7 @@ DECLARE	@sGUID VARCHAR(254);
 	SET @sGUID = CONVERT(NVARCHAR(255), @GUID);
 	--create the file name
 	--SELECT @GUID
-	SET @fileName = '940_' + @sGUID + '.xml';
+	SET @fileName = '943_' + @sGUID + '.xml';
 	--SELECT @filename
 	--create full path
 	SET @fullPath = @filePath + @fileName;
