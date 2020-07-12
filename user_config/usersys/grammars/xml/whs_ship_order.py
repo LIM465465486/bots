@@ -56,6 +56,7 @@ recorddefs = {
             ['SCAC', 'C', 4, 'AN'],
             ['U_ALL_REF_IT', 'C', 80, 'AN'],
             ['U_SES_EDI_CODE', 'C', 35, 'AN'],
+            ['U_SES_KeyAccount', 'C', 35, 'AN'],
         ],
     'Lines':[
             ['BOTSID','M',255,'A'],

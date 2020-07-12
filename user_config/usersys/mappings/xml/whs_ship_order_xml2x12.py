@@ -30,6 +30,9 @@ def main(inn, out):
             {'BOTSID': 'N9', 'N901': 'DP', 'N902': inn.get({'BOTSID': 'Document', 'U_SES_SLI_DN': None})})
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'N9', 'N901': 'ST', 'N902': inn.get({'BOTSID': 'Document', 'U_ALL_REF_IT': None})})
+    if inn.get({'BOTSID': 'Document', 'U_SES_KeyAccount': None}) == 'N':
+        out.put({'BOTSID': 'ST'},
+                {'BOTSID': 'N9', 'N901': 'ZZ'})
 
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'G62', 'G6201': '10', 'G6202' : transform.datemask(inn.get({'BOTSID': 'Document', 'DocDueDate': None}),'CCYY-MM-DD HH:mm','CCYYMMDD')})
@@ -60,8 +63,10 @@ def main(inn, out):
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0105': lin.get({'BOTSID': 'Line', 'CodeBars': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0106': 'BP', 'W0107': lin.get({'BOTSID': 'Line', 'U_ALL_CUSTOM_BP_NO': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'}, {'BOTSID': 'G69', 'G6901': lin.get({'BOTSID': 'Line', 'ItemName': None})})
-        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'}, {'BOTSID': 'N9', 'N901': 'PG', 'N902': lin.get({'BOTSID': 'Line', 'U_ALL_PackTypeCode': None})})
-        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'}, {'BOTSID': 'N9', 'N901': 'ZZ', 'N902': lin.get({'BOTSID': 'Line', 'U_SES_SLI_POP': None})})
+        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'},
+                {'BOTSID': 'N9', 'N901': 'PG', 'N902': lin.get({'BOTSID': 'Line', 'U_ALL_PackTypeCode': None})})
+        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'},
+                {'BOTSID': 'N9', 'N901': 'ZZ', 'N902': lin.get({'BOTSID': 'Line', 'U_SES_SLI_POP': None})})
         lin_row += 1
 
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W76', 'W7601': out.getcountsum({'BOTSID': 'ST'}, {'BOTSID': 'LX'},
