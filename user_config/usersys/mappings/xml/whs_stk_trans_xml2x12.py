@@ -8,7 +8,7 @@ def main(inn, out):
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0602': inn.get({'BOTSID': 'Document', 'DocEntry': None})})
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0603': transform.datemask(inn.get({'BOTSID': 'Document', 'DocDueDate': None}),'CCYY-MM-DD HH:mm','CCYYMMDD')})
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0604': inn.get({'BOTSID': 'Document', 'DocEntry': None})})
-    out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0606': inn.get({'BOTSID': 'Document', 'NumAtCard': None})})
+    out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0605': inn.get({'BOTSID': 'Document', 'NumAtCard': None})})
 
     nou = out.putloop({'BOTSID': 'ST'}, {'BOTSID': 'N1'})
     nou.put({'BOTSID': 'N1', 'N101': 'SF'})
