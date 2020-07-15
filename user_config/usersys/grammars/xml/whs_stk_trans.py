@@ -44,6 +44,7 @@ recorddefs = {
             ['ZipCode', 'C', 35, 'AN'],
             ['Country', 'C', 35, 'AN'],
             ['TrnspName', 'C', 35, 'AN'],
+            ['N902', 'C', 4, 'AN'],
         ],
     'Lines':[
             ['BOTSID','M',255,'A'],
