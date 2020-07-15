@@ -28,7 +28,7 @@ def main(inn, out):
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'G62', 'G6201': '70', 'G6202' : transform.datemask(inn.get({'BOTSID': 'Document', 'DocDueDate': None}),'CCYY-MM-DD HH:mm','CCYYMMDD')})
 
-    out.put({'BOTSID': 'ST'}, {'BOTSID': 'W27', 'W2701': 'LT'})
+    out.put({'BOTSID': 'ST'}, {'BOTSID': 'W27', 'W2701': 'S'})
 
     # loop over lines***************************************
     lin_row = 1
