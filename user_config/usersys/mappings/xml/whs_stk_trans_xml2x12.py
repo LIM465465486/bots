@@ -23,6 +23,7 @@ def main(inn, out):
     nou.put({'BOTSID': 'N1'}, {'BOTSID': 'N4', 'N403': inn.get({'BOTSID': 'Document', 'ZipCode': None})})
     nou.put({'BOTSID': 'N1'}, {'BOTSID': 'N4', 'N404': inn.get({'BOTSID': 'Document', 'Country': None})})
 
+    out.put({'BOTSID': 'ST'}, {'BOTSID': 'N9', 'N901': '06',  'N902': inn.get({'BOTSID': 'Document', 'N902': None})})
 
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'G62', 'G6201': '70', 'G6202' : transform.datemask(inn.get({'BOTSID': 'Document', 'DocDueDate': None}),'CCYY-MM-DD HH:mm','CCYYMMDD')})
