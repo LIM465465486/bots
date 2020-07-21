@@ -36,8 +36,9 @@ def main(inn, out):
         lou = out.putloop({'BOTSID': 'ST'}, {'BOTSID': 'W04'})
         lou.put({'BOTSID': 'W04', 'W0401': int(float(lin.get({'BOTSID': 'Line', 'Quantity': None})))})
         lou.put({'BOTSID': 'W04', 'W0402': 'EA'})
+        lou.put({'BOTSID': 'W04', 'W0403': lin.get({'BOTSID': 'Line', 'CodeBars': None})})
         lou.put({'BOTSID': 'W04', 'W0404': 'VN'})
-        lou.put({'BOTSID': 'W04', 'W0405': lin.get({'BOTSID': 'Line', 'CodeBars': None})})
+        lou.put({'BOTSID': 'W04', 'W0405': lin.get({'BOTSID': 'Line', 'ItemCode': None})})
         lin_row += 1
 
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W03', 'W0301': out.getcountsum({'BOTSID': 'ST'}, {'BOTSID': 'W04', 'W0401': None})})  # bots counts total Number of Units Shipped

@@ -59,8 +59,9 @@ def main(inn, out):
 
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0101': int(float(lin.get({'BOTSID': 'Line', 'RelQtty': None})))})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0102': 'EA'})
+        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0103': lin.get({'BOTSID': 'Line', 'CodeBars': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0104': 'VN'})
-        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0105': lin.get({'BOTSID': 'Line', 'CodeBars': None})})
+        lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0105': lin.get({'BOTSID': 'Line', 'ItemCode': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01', 'W0106': 'BP', 'W0107': lin.get({'BOTSID': 'Line', 'U_ALL_CUSTOM_BP_NO': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'}, {'BOTSID': 'G69', 'G6901': lin.get({'BOTSID': 'Line', 'ItemName': None})})
         lou.put({'BOTSID': 'LX'}, {'BOTSID': 'W01'},
