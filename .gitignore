@@ -110,6 +110,7 @@ ENV/
 /Gemfile.lock
 user_config/botssys/data/*
 user_config/botssys/logging/*
+.bundle/
 
 # macOS
 .DS_Store
