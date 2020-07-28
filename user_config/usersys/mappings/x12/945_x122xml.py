@@ -51,6 +51,8 @@ def main(inn, out):
     # loop over lines
     for line in inn.getloop({'BOTSID': 'ST'}, {'BOTSID': 'LX'}):
         lou = out.putloop({'BOTSID': 'Document'}, {'BOTSID': 'Lines'}, {'BOTSID': 'Line'})
+        set_control_num
+        lou.put({'BOTSID': 'Line', 'ST02': set_control_num})
         lou.put({'BOTSID': 'Line', 'LX01': line.get({'BOTSID': 'LX', 'LX01': None})})
         lou.put({'BOTSID': 'Line', 'MAN01': line.get({'BOTSID': 'LX'}, {'BOTSID': 'MAN', 'MAN01': None})})
         lou.put({'BOTSID': 'Line', 'MAN02': line.get({'BOTSID': 'LX'}, {'BOTSID': 'MAN', 'MAN02': None})})
