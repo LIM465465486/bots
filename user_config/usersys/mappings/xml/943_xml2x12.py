@@ -1,7 +1,7 @@
 import bots.transform as transform
 
 def main(inn, out):
-    # sender, receiver is correct via QUERIES in grammar. test2
+    # sender, receiver is correct via QUERIES in grammar.
     out.put({'BOTSID': 'ST', 'ST01': '943', 'ST02': out.ta_info['reference'].zfill(4)})
 
     out.put({'BOTSID': 'ST'}, {'BOTSID': 'W06', 'W0601': 'F'})
