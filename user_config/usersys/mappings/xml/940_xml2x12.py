@@ -30,10 +30,8 @@ def main(inn, out):
             {'BOTSID': 'N9', 'N901': 'DP', 'N902': inn.get({'BOTSID': 'Document', 'U_SES_SLI_DN': None})})
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'N9', 'N901': 'ST', 'N902': inn.get({'BOTSID': 'Document', 'U_ALL_REF_IT': None})})
-    if inn.get({'BOTSID': 'Document', 'U_SES_KeyAccount': None}) == 'N':
-        out.put({'BOTSID': 'ST'},
-                {'BOTSID': 'N9', 'N901': 'ZZ'})
-
+    out.put({'BOTSID': 'ST'},
+            {'BOTSID': 'N9', 'N901': 'ZZ', 'N902': inn.get({'BOTSID': 'Document', 'U_SES_KeyAccount': None})})
     out.put({'BOTSID': 'ST'},
             {'BOTSID': 'G62', 'G6201': '10', 'G6202' : transform.datemask(inn.get({'BOTSID': 'Document', 'DocDueDate': None}),'CCYY-MM-DD HH:mm','CCYYMMDD')})
     out.put({'BOTSID': 'ST'},
