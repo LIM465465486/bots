@@ -1,29 +1,18 @@
-20200709 00:53:38 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 00:55:29 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 00:56:06 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 00:56:58 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 00:59:35 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 00:59:47 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:03:53 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:06:41 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:07:12 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:09:20 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:10:24 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:43:59 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 01:53:47 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 13:44:32 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 13:44:34 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 13:48:54 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 13:56:35 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 13:58:28 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 14:01:10 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 14:05:57 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200709 16:41:05 STARTINFO: Bots webserver started.
-20200709 16:41:05 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
-20200709 16:41:05 STARTINFO: Bots webserver serving at port: "8080".
-20200709 16:41:05 STARTINFO: Bots webserver uses plain http (no ssl).
-20200709 16:41:37 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
-20200726 20:34:20 STARTINFO: Bots webserver started.
-20200726 20:34:20 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
-20200726 20:34:20 STARTINFO: Bots webserver serving at port: "8080".
-20200726 20:34:20 STARTINFO: Bots webserver uses plain http (no ssl).
+20200727 09:23:37 STARTINFO: Bots webserver started.
+20200727 09:23:37 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
+20200727 09:23:37 STARTINFO: Bots webserver serving at port: "8080".
+20200727 09:23:37 STARTINFO: Bots webserver uses plain http (no ssl).
+20200727 13:24:53 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:29:34 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:30:09 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:30:49 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:32:19 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:40:14 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 13:42:08 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 14:09:47 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 14:11:24 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 14:12:06 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 14:13:34 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 14:24:22 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 15:01:25 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200727 16:33:57 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
