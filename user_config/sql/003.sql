@@ -1,8 +1,12 @@
 USE [TFi]
 GO
 
+DELETE dbo.payload
+
 INSERT INTO dbo.payload ([data])
-select
+
+SELECT
+
 '<?xml version="1.0" encoding="utf-8" ?>
 <Document>
     <sender>3102332500</sender>
@@ -15,6 +19,7 @@ select
     <W0606>T150716-001</W0606>
     <Lines>
         <Line>
+            <ST02>0001</ST02>
             <LX01>1</LX01>
             <MAN01>GM</MAN01>
             <MAN02>00004000000036754524</MAN02>
@@ -30,6 +35,7 @@ select
             <W1212>L</W1212>
         </Line>
         <Line>
+            <ST02>0001</ST02>
             <LX01>2</LX01>
             <MAN01>GM</MAN01>
             <MAN02>00004000000036754548</MAN02>
@@ -45,6 +51,7 @@ select
             <W1212>L</W1212>
         </Line>
         <Line>
+            <ST02>0001</ST02>
             <LX01>3</LX01>
             <MAN01>GM</MAN01>
             <MAN02>00004000000036754555</MAN02>
@@ -60,6 +67,7 @@ select
             <W1212>L</W1212>
         </Line>
         <Line>
+            <ST02>0001</ST02>
             <LX01>4</LX01>
             <MAN01>GM</MAN01>
             <MAN02>00004000000036754562</MAN02>
@@ -75,6 +83,7 @@ select
             <W1212>L</W1212>
         </Line>
         <Line>
+            <ST02>0001</ST02>
             <LX01>5</LX01>
             <MAN01>GM</MAN01>
             <MAN02>00004000000036754579</MAN02>
