@@ -37,13 +37,16 @@ SELECT
                 WHEN h.U_SES_RdrType = 'DS'
                 THEN
                     LEFT(ISNULL(a.BlockS, h.CardName), 60)
+
+                    WHEN (a.BlockS <> '' OR a.BlockS IS NOT NULL)
+                        THEN LEFT(a.BlockS, 60)
+                        ELSE LEFT(h.CardName, 60)
+
                 ELSE
                     CASE
-                        WHEN h.ShipToCode <> 'ship to'
-                        THEN
-                            LEFT(ISNULL(h.ShipToCode, h.CardName), 60)
-                        ELSE
-                            LEFT(h.CardName, 60)
+                        WHEN h.ShipToCode <> 'ship to' AND h.ShipToCode IS NOT NULL
+                        THEN LEFT(h.ShipToCode, 60)
+                        ELSE LEFT(h.CardName, 60)
                     END
                 END AS [N102-ST] --Name
             ,ISNULL(h.PayToCode, h.CardName) AS [N102-BT]
