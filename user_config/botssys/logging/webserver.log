@@ -1,5 +1,4 @@
-20200810 09:04:59 STARTINFO: Bots webserver started.
-20200810 09:04:59 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
-20200810 09:04:59 STARTINFO: Bots webserver serving at port: "8080".
-20200810 09:04:59 STARTINFO: Bots webserver uses plain http (no ssl).
-20200810 14:30:09 INFO     : Run bots-engine with parameters: "['/usr/local/bin/python', '/usr/local/bin/bots-engine.py', '-cconfig', '--new']"
+20200813 15:20:01 STARTINFO: Bots webserver started.
+20200813 15:20:01 STARTINFO: Bots webserver configdir: "/usr/local/lib/python3.4/site-packages/bots/config".
+20200813 15:20:01 STARTINFO: Bots webserver serving at port: "8080".
+20200813 15:20:01 STARTINFO: Bots webserver uses plain http (no ssl).
